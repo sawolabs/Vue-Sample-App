@@ -8,18 +8,19 @@
         <a class="navbar-brand" href="#">
           <img class="navbar-logo" src="../assets/logo.jpg" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          @click="home()"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <router-link to="/login">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </router-link>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a
