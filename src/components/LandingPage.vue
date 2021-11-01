@@ -16,6 +16,7 @@
           aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          @click="home()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -96,6 +97,11 @@ export default {
   name: "LandingPage",
   components: {
     Footer,
+  },
+  methods: {
+    home() {
+      window.location.href = "/login";
+    },
   },
 };
 </script>
